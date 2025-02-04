@@ -1,8 +1,10 @@
 ---
 - name: Install cowsay
-  hosts: localhost  # Aqui mudamos para o localhost
+  hosts: host_servers
 
   tasks:
+    - name: echo uname
+    
     - name: Install cowsay
       package:
         state: present
