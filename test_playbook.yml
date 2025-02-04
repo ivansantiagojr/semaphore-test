@@ -1,8 +1,9 @@
 ---
 - name: Install cowsay
-  hosts: host_servers
+  hosts: localhost  # Aqui mudamos para o localhost
 
   tasks:
-    package:
-      name: cowsay
-      state: present
+    - name: Install cowsay
+      package:
+        state: present
+        name: cowsay
