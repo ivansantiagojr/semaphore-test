@@ -1,0 +1,8 @@
+---
+- name: Create test file
+  hosts: host_servers
+  tasks:
+    - name: Create file in /tmp
+      ansible.builtin.copy:
+        content: "Created by Ansible from container"
+        dest: "/tmp/from_sem.txt"
