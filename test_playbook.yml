@@ -1,9 +1,6 @@
 ---
 - name: Install cowsay
   hosts: host_servers
-
-  tasks:
-    - name: echo uname
     
     - name: Install cowsay
       package:
