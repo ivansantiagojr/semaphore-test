@@ -6,4 +6,5 @@
     - name: Install cowsay
       package:
         state: present
-        name: cowsay
+        name: cowsay  
+      become: True
