@@ -1,7 +1,8 @@
 ---
 - name: Install cowsay
   hosts: host_servers
-  package:
-    name: cowsay
-    state: present
-  become: True
+
+  tasks:
+    package:
+      name: cowsay
+      state: present
