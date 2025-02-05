@@ -1,10 +1,12 @@
 ---
-- name: Install cowsay
-  hosts: host_servers
-  become: yes
+- name: Instalação do cowsay
+  hosts: host_servers   # Grupo de hosts do inventário
+  become: yes    # Diz que vai escalonar privilégios. Equivalente ao -b
 
-  tasks:
-    - name: Install cowsay
-      package:
+  tasks:  # Descrição das tarefas que serão executadas
+
+    - name: Instalação do cowsay  # Nome da tarefa
+      package:                   # Nome do módulo
+        # Argumentos do módulo
         state: present
-        name: cowsay  
+        name: cowsay
