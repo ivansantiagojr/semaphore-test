@@ -1,7 +1,7 @@
 ---
 - name: Install cowsay
   hosts: host_servers
-  become: True
+  become: yes
 
   tasks:
     - name: Install cowsay
