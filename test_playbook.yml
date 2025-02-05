@@ -1,7 +1,7 @@
 ---
 - name: Instalação do cowsay
   hosts: host_servers   # Grupo de hosts do inventário
-  become: yes    # Diz que vai escalonar privilégios. Equivalente ao -b
+  become: true    # Diz que vai escalonar privilégios. Equivalente ao -b
 
   tasks:  # Descrição das tarefas que serão executadas
 
