@@ -6,5 +6,5 @@
   tasks:  # Descrição das tarefas que serão executadas   
     - name: Start service httpd, if not started
       ansible.builtin.service:
-        name: postgres
+        name: postgresql
         state: started
