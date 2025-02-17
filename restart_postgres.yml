@@ -1,0 +1,10 @@
+---
+- name: Reinicia o postgres
+  hosts: host_servers   # Grupo de hosts do inventário
+  become: true    # Diz que vai escalonar privilégios. Equivalente ao -b
+
+  tasks:  # Descrição das tarefas que serão executadas   
+    - name: Start service httpd, if not started
+      ansible.builtin.service:
+        name: postgres
+        state: started
