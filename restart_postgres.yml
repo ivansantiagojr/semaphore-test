@@ -4,7 +4,7 @@
   become: true    # Diz que vai escalonar privilégios. Equivalente ao -b
 
   tasks:  # Descrição das tarefas que serão executadas   
-    - name: Start service httpd, if not started
+    - name: restart service postgresql
       ansible.builtin.service:
         name: postgresql
         state: restarted
